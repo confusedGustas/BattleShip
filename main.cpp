@@ -259,9 +259,11 @@ public:
                     continue;
                 } else if (playerBoard[row][col] == 'S') {
                     player.setBoard(row, col, 'H');
+                    displayBoard();
                     break;
                 } else {
                     player.setBoard(row, col, 'M');
+                    displayBoard();
                     break;
                 }
             }
